@@ -30,7 +30,7 @@ git clone https://github.com/nisib/bookstore.git
 ## Без Docker
 
 У вас должен быть установлен **PostgreSQL**. В файле конфигураций [application.yaml](src/main/resources/application.yaml) записываем свои данные: 
-* ${DB_URL} - Адрес для подключение к базе данных(jdbc:postgresql://localhost:5432/postgres (postgres-автоматический создается после установки))
+* ${DB_URL} - Адрес для подключение к базе данных(jdbc:postgresql://localhost:5432/название (нужно указать пустую базу данных FlyWay сам установить таблицу))
 * ${DB_USERNAME} - Свой логин(при установке или же создать его) 
 * ${DB_PASSWORD} - Пароль для базы данных
 
