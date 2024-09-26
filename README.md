@@ -21,6 +21,12 @@
 
 # Как запустить?
 
+Копируем репозиторий 
+
+``` bash
+git clone https://github.com/nisib/bookstore.git
+```
+
 ## Без Docker
 
 У вас должен быть установлен **PostgreSQL**. В файле конфигураций application.yaml записываем свои данные: 
