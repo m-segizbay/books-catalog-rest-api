@@ -4,7 +4,7 @@
 
 По техническому заданию необходимо было разработать сервис, который сможет получать, хранить и отдавать информацию о книгах.
 
-* Трехслойная архетиктура Controller - Service - Repository
+* Трехслойная архетиктура [Controller](src/main/java/kz/segizbay/bookscatalog/controllers) - [Service](src/main/java/kz/segizbay/bookscatalog/service) - [Repository](src/main/java/kz/segizbay/bookscatalog/repository)
 
 # Стек
 
@@ -17,7 +17,7 @@
 
 # База данныхых 
 
-Используется **FlyWay** который автоматический создает таблицу и заполняет их начальными данными.
+Используется [**FlyWay**](src/main/resources/db/migration/V1__Initial_setup.sql) который автоматический создает таблицу и заполняет их начальными данными.
 
 # Как запустить?
 
@@ -29,7 +29,7 @@ git clone https://github.com/nisib/bookstore.git
 
 ## Без Docker
 
-У вас должен быть установлен **PostgreSQL**. В файле конфигураций application.yaml записываем свои данные: 
+У вас должен быть установлен **PostgreSQL**. В файле конфигураций [application.yaml](src/main/resources/application.yaml) записываем свои данные: 
 * ${DB_URL} - Адрес для подключение к базе данных(jdbc:postgresql://localhost:5432/postgres (postgres-автоматический создается после установки))
 * ${DB_USERNAME} - Свой логин(при установке или же создать его) 
 * ${DB_PASSWORD} - Пароль для базы данных
