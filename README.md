@@ -36,7 +36,7 @@ git clone https://github.com/m-segizbay/books-catalog-rest-api.git
 
 Сначала нужно собрать проект с помощью Maven(Для такого что бы не выбрасывало исключение нужно добавить -DskipTests. Потому что в проекте отсуствует Тесты)
 ```shell 
-maven package -DskipTests
+mvn package -DskipTests
 ``` 
 После запускаем собранный проект через терминал(Мы должны находиться в папке с проектом) 
 ```shell 
@@ -49,7 +49,7 @@ java -jar .\target\booksCatalog-0.0.1-SNAPSHOT.jar
 
 Через Maven так же нужно собрать проект(Если вы не собирали):
 ```shell 
-maven package -DskipTests
+mvn package -DskipTests
 ``` 
 Запускаем docker-compose
 
