@@ -45,6 +45,14 @@ java -jar .\target\booksCatalog-0.0.1-SNAPSHOT.jar
 ```
 
 ### Запуск в Docker
+
+**Это очень важно! Без этого программа в Docker не запуститься**
+
+В файле конфигураций [application.yaml](src/main/resources/application.yaml) должны стоять:
+* url: ${DB_URL}
+* username: ${DB_USERNAME}
+* password: ${DB_PASSWORD}
+
 У вас должен установлен Docker на ПК и запушен
 
 Через Maven так же нужно собрать проект(Если вы не собирали):
