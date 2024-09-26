@@ -24,7 +24,7 @@
 Копируем репозиторий 
 
 ``` bash
-git clone https://github.com/nisib/bookstore.git
+git clone https://github.com/m-segizbay/books-catalog-rest-api.git
 ```
 
 ## Без Docker
