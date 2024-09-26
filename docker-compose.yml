@@ -1,0 +1,25 @@
+version: '3.8'
+
+services:
+  book_app:
+    container_name: book_app
+    restart: always
+    build: .
+    ports:
+      - "8080:8080"
+    depends_on:
+      - db
+    environment:
+      DB_USERNAME: user
+      DB_PASSWORD: password
+      DB_URL: jdbc:postgresql://db:5432/book_db
+
+  db:
+    container_name: db
+    image: postgres
+    environment:
+      POSTGRES_DB: book_db
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: password
+    ports:
+      - "5432:5432"

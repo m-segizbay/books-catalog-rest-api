@@ -6,7 +6,7 @@ import org.springframework.validation.FieldError;
 
 import java.util.List;
 
-public class ErrorUtil {
+public class ErrorsUtil {
     public static void returnErrorsToClient(BindingResult bindingResult){
         StringBuilder errorsMsg = new StringBuilder();
 
@@ -15,7 +15,7 @@ public class ErrorUtil {
             errorsMsg.append(error.getField())
                     .append(" - ")
                     .append(error.getDefaultMessage())
-                    .append(";");
+                    .append("; ");
         }
         throw new BookValidException(errorsMsg.toString());
     }
