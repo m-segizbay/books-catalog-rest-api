@@ -36,6 +36,9 @@ public class Book {
     @Column(precision = 10, scale = 2)
     private BigDecimal price;
 
+    @Column(name = "description")
+    private String description;
+
     @Column(name = "created_at")
     private LocalDateTime createdAt;
 

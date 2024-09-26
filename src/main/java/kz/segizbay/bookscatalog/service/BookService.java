@@ -55,6 +55,7 @@ public class BookService {
         Book book = findByBookId(id);
         book.setTitle(bookDTO.getTitle());
         book.setAuthor(bookDTO.getAuthor());
+        book.setDescription(bookDTO.getDescription());
         book.setPrice(bookDTO.getPrice());
         book.setUpdatedAt(LocalDateTime.now());
         bookRepository.save(book);

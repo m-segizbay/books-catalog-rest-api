@@ -20,4 +20,6 @@ public class BookDTO {
 
     @Min(value = 0, message = "Цена должна быть выше чем 0")
     private BigDecimal price;
+
+    private String description;
 }
